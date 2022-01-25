@@ -462,7 +462,7 @@ async function generateTypes({
     typeStrings.push(`
       export type Documents = ${documentTypes
         .map(({ name }) =>
-          getTypeName(name, { allowHyphen: true, allowPeriod: false })
+          getTypeName(name, { allowHyphen: true, allowPeriod: true })
         )
         .join(' | ')}
     `);

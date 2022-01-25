@@ -387,7 +387,7 @@ async function generateTypes({
      */
     export interface ${createTypeName(name, {
       allowHyphen: true,
-      allowPeriod: false,
+      allowPeriod: true,
     })} extends SanityDocument {
         _type: '${name}';
         ${fields

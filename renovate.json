@@ -1,6 +1,7 @@
 {
-  "extends": ["config:base", "schedule:earlyMondays"],
-  "groupName": "all",
-  "rebaseWhen": "behind-base-branch",
-  "automerge": true
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": ["maintenance"],
+  "extends": [
+    "config:recommended"
+  ]
 }
